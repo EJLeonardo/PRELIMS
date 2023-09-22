@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Carousel</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <img src="img/scpes.png" height="70px" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="home.html" class="nav-item nav-link active">Home</a>
+                <a href="whatisbscpe.html" class="nav-item nav-link">What is BSCpE?</a>
+                <a href="specialization.html" class="nav-item nav-link">BSCpE Specializations</a>
+                <a href="whatcpedo.html" class="nav-item nav-link">What a BSCpE do</a>
+                <a href="department.html" class="nav-item nav-link">BSCpE Department</a>
+                <a href="organization.html" class="nav-item nav-link">BSCpE Organization</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+</head>
+
+<style>
+
+body {
+    font-family: url("fonts/bodyfont-poppins.ttf");
+    color: #070A52;
+    font-weight: 500;
+    font-size:110%;
+    background-image: url("img/bg4.png");
+}
+
+h3 {
+    font-family: url("fonts/titlefont-roboto.ttf");
+    font-style: italic;
+    font-weight: 700;
+}
+
+.carousel-item{
+    min-height: 280px;
+    border: 2px solid gray; /* This sets a solid black border around the card */
+    border-radius: 10px; /* Rounded corners for a nicer look */
+    padding: 10px; /* Add some padding for spacing inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-pahaba {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid gray; /* This sets a solid black border around the card */
+    border-radius: 10px; /* Rounded corners for a nicer look */
+    padding: 10px; /* Add some padding for spacing inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url("img/bg3.png");
+    
+}
+
+</style>
+<body>
+
+    <div class="m-4">
+
+        <div class="banners">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/cpe2.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-pahaba">
+            <div class="card-header">Featured</div>
+            <div class="card-body">
+                <h3 class="card-title">What is a Specialization?</h3>
+                <p class="card-text">A specialization is a focused area of study of attached to a specific major, with specific coursework beyond major requirements. A specialization is a focused area of study attached to a specific major, and is in addition to course requirements for the major.</p>
+            </div>
+        </div>
+
+        <p>And here are the Specializations of Computer Engineering:</p>
+
+        <div class="accordion" id="myAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. Networking</button>									
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>The networking specialization involves the building and daily maintenance of computer network systems. These networks generally include several components, including an extranet, intranet, wide area network (WAN) and local area network (LAN). If there are any errors, a networking professional works to fix them quickly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. Hardware Systems</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>A professional who works in this specialization primarily focuses on designing and developing a variety of hardware systems and components. They can make processors, motherboards and other essential devices. After making a new component, they test prototypes to make sure they're working properly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. Security</button>                     
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>A security professional uses their computer engineering skills to protect digital infrastructures from cyber threats. They may protect a variety of systems, like databases, websites and networks. These specialists are responsible for building and maintaining the security systems, including addressing any immediate cyber attacks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">4. Web development</button>                     
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>A person who works in web development builds and maintains websites. They focus not only on the visual appearance of the website, but on the functional capabilities of it as well. They ensure their websites appeal to visitors and are easy to use and navigate.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingfive">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">5. Software development</button>                     
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Software development professionals have a diverse range of duties, often dependent on the needs of their employer. Some build software systems, while others manage mobile device applications and company networks. These professionals usually have a firm understanding of the software development life-cycle and relevant methodologies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix">6. Programming</button>                     
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Software development professionals have a diverse range of duties, often dependent on the needs of their employer. Some build software systems, while others manage mobile device applications and company networks. These professionals usually have a firm understanding of the software development life-cycle and relevant methodologies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSeven">7. Video game development</button>                     
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>A professional who works in video game development usually works on a team that creates videogames. The role can vary depending on their skills, like landscape designers, audio engineers, animation programmers or game testers. These individuals understand the development process and how each role contributes to it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEight">8. Data</button>                     
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>A data professional can have various tasks revolving around the management of data. Some practitioners manage databases, while others review data and interpret it to reveal critical information. There are also data specialists that use statistics to perform data analysis and make predictive measurements about future outcomes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseNine">9. Artificial Intelligence</button>                     
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>A professional in artificial intelligence employs computer programming and engineering to build machines that mimic human actions. These machines can have recreational uses, while others save time by performing tedious human labor. There are also some robots that continuously learn, making them more efficient as they gain new experiences.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTen">10. Information Technology</button>                     
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>A professional in artificial intelligence employs computer programming and engineering to build machines that mimic human actions. These machines can have recreational uses, while others save time by performing tedious human labor. There are also some robots that continuously learn, making them more efficient as they gain new experiences.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEleven">11. Mobile development</button>                     
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Mobile development professionals use their computer engineering skills to develop applications for mobile devices, like cellphones and tablets. They maintain the infrastructure for these applications and monitor their performance. These individuals frequently update their applications, so they comply with new software system upgrades and releases.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+            <footer>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Edward Jeshua E. Leonardo</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+</html>                            

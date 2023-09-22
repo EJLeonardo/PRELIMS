@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Carousel</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <img src="img/scpes.png" height="70px" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="home.html" class="nav-item nav-link active">Home</a>
+                <a href="whatisbscpe.html" class="nav-item nav-link">What is BSCpE?</a>
+                <a href="specialization.html" class="nav-item nav-link">BSCpE Specializations</a>
+                <a href="whatcpedo.html" class="nav-item nav-link">What a BSCpE do</a>
+                <a href="department.html" class="nav-item nav-link">BSCpE Department</a>
+                <a href="organization.html" class="nav-item nav-link">BSCpE Organization</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+</head>
+
+<style>
+
+body {
+    font-family: url("fonts/bodyfont-poppins.ttf");
+    color: #070A52;
+    font-weight: 500;
+    font-size:110%;
+    background-image: url("img/bg4.png");
+
+}
+
+h2 {
+    font-family: url("fonts/titlefont-roboto.ttf");
+    font-style: italic;
+    font-weight: 700;
+    font-size: 130%;
+}
+
+h1 {
+    font-family: url("fonts/titlefont-roboto.ttf");
+    font-style: italic;
+    font-weight: 700;
+}
+
+.carousel-item{
+    min-height: 280px;
+    border: 2px solid gray; /* This sets a solid black border around the card */
+    border-radius: 10px; /* Rounded corners for a nicer look */
+    padding: 10px; /* Add some padding for spacing inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.col-md-4 {
+    width: 480px;
+    margin: 5.1px;
+    border: 2px solid gray; /* This sets a solid black border around the card */
+    border-radius: 10px; /* Rounded corners for a nicer look */
+    padding: 10px; /* Add some padding for spacing inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url("img/bg3.png");
+}
+
+.ulo {
+    margin: 5.1px;
+    border: 2px solid gray; /* This sets a solid black border around the card */
+    border-radius: 10px; /* Rounded corners for a nicer look */
+    padding: 10px; /* Add some padding for spacing inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url("img/bg3.png");
+}
+
+</style>
+
+<body>
+
+    <div class="m-4">
+
+        <div class="banners">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/cpe1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="ulo">
+            <div class="p-5 my-4 bg-light rounded-3">
+                <h1>WHAT IS COMPUTER ENGINEERING?</h1>
+                <p class="lead">Computer engineering deals with the application of engineering principles and methodologies in the analysis, design, implementation and management of hardware and software, and the integration of both. Computer engineering deals with the application of engineering principles and methodologies in the analysis, design, implementation and management of hardware and software, and the integration of both.</p>
+                <p><a href="https://www.ue.edu.ph/mla/computer/" target="_blank" class="btn btn-outline-dark">Learn More</a></p>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Curriculum</h2>
+                    <hr>
+                    <p>The CpE curriculum and student projects will focus on embedded systems, a term that refers to any device that uses a microprocessor or microcontroller for a specific purpose. Embedded systems appear in a wide array of household and industrial systems, and including portable and console game systems, robots, game peripherals, electronic toys, digital cameras, audio/video component systems, and even aircraft flight systems.</p>
+                    <p><a href="https://www.ue.edu.ph/mla/computer/" target="_blank" class="btn btn-outline-secondary">Know More &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Applications</h2>
+                    <hr>
+                    <p>Robotics and Automation</p>
+                    <p>Artificial Intelligence</p>
+                    <p>Operating Systems</p>
+                    <p>Mobile and Web Applications</p>
+                    <p>Information Systems</p>
+                    <p style="position: relative; top: 15px;"><a href="hhttps://www.ue.edu.ph/mla/computer/" target="_blank" class="btn btn-outline-secondary">Know More &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Career Oppurtunities</h2>
+                    <hr>
+                    <p>Project Engineer/Manager</p>
+                    <p>Data Communications Engineer</p>
+                    <p>Systems Analyst/Designer</p>
+                    <p>Software Engineer</p>
+                    <p>Network System Administrator/Manager</p>
+                    <p style="position: relative; top: 15px;"><a href="https://www.ue.edu.ph/mla/computer/" target="_blank" class="btn btn-outline-secondary">Know More &raquo;</a></p>
+                </div>
+            </div>
+
+            <hr>
+
+            <footer>
+
+                <div class="row">
+                    
+                    <div class="col-md-6">
+
+                        <p>Edward Jeshua E. Leonardo</p>
+
+                    </div>
+
+                </div>
+
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+</html>                            

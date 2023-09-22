@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Carousel</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <img src="img/scpes.png" height="70px" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="home.html" class="nav-item nav-link active">Home</a>
+                <a href="whatisbscpe.html" class="nav-item nav-link">What is BSCpE?</a>
+                <a href="specialization.html" class="nav-item nav-link">BSCpE Specializations</a>
+                <a href="whatcpedo.html" class="nav-item nav-link">What a BSCpE do</a>
+                <a href="department.html" class="nav-item nav-link">BSCpE Department</a>
+                <a href="organization.html" class="nav-item nav-link">BSCpE Organization</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+</head>
+
+<style>
+/* Custom style to prevent carousel from being distorted 
+   if for some reason image doesn't load */
+body {
+    font-family: url("fonts/bodyfont-poppins.ttf");
+    color: #070A52;
+    font-weight: 500;
+    font-size:110%;
+    background-image: url("img/bg4.png");
+
+}
+
+h5 {
+    font-family: url("fonts/titlefont-roboto.ttf");
+    font-style: italic;
+    font-weight: 800;
+    font-size: 120%;
+}
+
+h2 {
+    font-family: url("fonts/titlefont-roboto.ttf");
+    font-style: italic;
+    font-weight: 800;
+}
+
+.carousel-item{
+    min-height: 280px;
+    border: 2px solid gray; /* This sets a solid border around the card */
+    border-radius: 10px; /* Rounded corners for a nicer look */
+    padding: 10px; /* Add some padding for spacing inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.col6 {
+    margin: 5.1px;
+    border: 2px solid gray; /* This sets a solid black border around the card */
+    border-radius: 10px; /* Rounded corners for a nicer look */
+    padding: 10px; /* Add some padding for spacing inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url("img/bg3.png");
+}
+
+.ulo {
+    margin: 10px;
+    border: 2px solid gray; /* This sets a solid black border around the card */
+    border-radius: 10px; /* Rounded corners for a nicer look */
+    padding: 10px; /* Add some padding for spacing inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url("img/bg3.png");
+}
+
+</style>
+<body>
+
+    <div class="m-4">
+
+        <div class="banners">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/hello.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+            </div>
+        </div>
+
+        <div class="ulo">
+        <div class="p-3 my-4 bg-light rounded-3">
+            <h2>WHAT DO COMPUTER ENGINEERS DO?</h2>
+            <p class="lead">Computer engineers work for computer companies such as Intel, HP, and Texas Instruments, and also in industries that build or use computer-based systems, such as telecommunications, automotive, aerospace, etc. Many computer engineers also get jobs as programmers. While they have less programming experience than computer science graduates, their understanding of hardware gives them an advantage in dealing with overall systems.</p>
+        </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-6">
+                <div class="card border-dark mb-4">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Hardware Design and Development</h5>
+                        <p class="card-text">Computer engineers design and develop the physical components of computer systems, such as microprocessors, memory modules, circuit boards, and peripheral devices like graphics cards and hard drives.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card border-dark mb-4">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Software Development</h5>
+                        <p class="card-text">Computer engineers write software programs and develop software systems. They may work on operating systems, device drivers, application software, or embedded software for various devices and platforms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card border-dark mb-4">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Computer Architecture</h5>
+                        <p class="card-text">Computer engineers are involved in designing the architecture of computer systems, including selecting the appropriate CPU, memory, and other components to meet specific performance and power requirements.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card border-dark mb-4">
+                    <div class="card-body text-dark"> 
+                        <h5 class="card-title">Embedded Systems</h5>
+                        <p class="card-text">Computer engineers work on embedded systems, which are specialized computer systems integrated into other devices like cars, smartphones, medical devices, and appliances.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card border-dark mb-4">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Cybersecurity</h5>
+                        <p class="card-text">Computer engineers play a critical role in ensuring the security of computer systems and networks. They work on implementing security protocols, encryption algorithms, and intrusion detection systems to protect against cyber threats.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card border-dark mb-4">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Robotics</h5>
+                        <p class="card-text">Some computer engineers specialize in robotics, designing and programming robots for various applications, including manufacturing, healthcare, and autonomous vehicles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+            <footer>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Edward Jeshua E. Leonardo</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+</html>                            
